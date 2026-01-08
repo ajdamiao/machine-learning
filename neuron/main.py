@@ -9,7 +9,7 @@ class Neuron(BaseModel):
     bias: float
     actfunc: Callable[[float], float]
     
-# funcao de ativacao (discreta) outros modos de funcao (continua)
+# funcao de ativacao identidade
 def ident(x: float) -> float:
     return x
 
