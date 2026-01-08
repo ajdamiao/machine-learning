@@ -15,8 +15,10 @@ def ident(x: float) -> float:
 
 def computout(neuron: Neuron, x: list):
     k = 0
+    
     for i in range(len(x)):
         k = neuron.weight[i] * x[i]
+        
     k = k + neuron.bias
     
     return neuron.actfunc(k)
@@ -37,7 +39,6 @@ def initneuron(actfunc: Callable[[float], float], nconnections: int) -> Neuron:
     return neuron
 
 if __name__ == "__main__":
-    
     neuron = initneuron(ident, 4)
     
     x = [10, 6, -8, 5]
