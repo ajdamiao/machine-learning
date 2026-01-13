@@ -106,6 +106,7 @@ if __name__ == "__main__":
     # define entradas
     x = [[0, 0] for _ in range(6)]
 
+    # horas de estudos
     x[0][0] = 1
     x[1][0] = 2
     x[2][0] = 4
@@ -113,6 +114,7 @@ if __name__ == "__main__":
     x[4][0] = 9
     x[5][0] = 8
     
+    # horas de sono
     x[0][1] = 5
     x[1][1] = 8
     x[2][1] = 6
@@ -121,7 +123,7 @@ if __name__ == "__main__":
     x[5][1] = 5
     
     
-    # Saida verdadeira
+    # Saida verdadeira (nota da prova)
     out_true : float = [ 3.2, 4.5, 5, 6.8, 8.2, 6 ]
     
     # Saida predita
